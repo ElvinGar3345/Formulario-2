@@ -3,25 +3,75 @@
 <head>
     <meta charset="UTF-8" />
     <title> Formulario 2</title>
-</head>
-<body>
-    <form action="" method="get"> 
-        <p>Nombre: <input type="text" name="name_control" autofocus required /></p> 
-        <p>Correo electrónico: <input type="email" name="email_control" required /></p> 
-        <p>URL: <input type="url" name="url_control" placeholder="Escribe la URL de tu página web 
-        personal" /></p> 
-        <p>Fecha: <input type="date" name="date_control" /></p> 
-        <p>Tiempo: <input type="time" name="time_control" /></p> 
-        <p>Fecha y hora: <input type="datetime" name="datetime_control" /> 
-        </p> 
-        <p>Mes: <input type="month" name="month_control" /></p> 
-        <p>Semana: <input type="week" name="week_control" /></p> 
-        <p>Número (min -10, max 10): <input type="number" name="number_control" min="-10" max="10" 
-        value="0" /></p> 
-        <p>Teléfono: <input type="tel" name="tel_control"></p> 
-        <p>Término de búsqueda: <input type="search" name="search_control" /></p> 
-        <p>Color favorito: <input type="color" name="color_control" /></p> 
-        <p><input type="submit" value="Enviar" /></p> 
-        </form>
-</body>
+    <style>
+        .container {
+             width: 100%;
+             margin: 0 auto;
+             border: 1px solid #000;
+        }
+       .header, .footer {
+       background-color: #d0931a82;
+       padding: 20px;
+       text-align: center;
+       }
+       
+       .content{
+           display: flex;
+       }
+       .sidebar{
+       width:25% ;
+       background-color:#ddd; 
+       padding: 20px;
+       }
+       
+       .main{
+           width: 60%;
+           padding: 20rem;
+       }
+       
+       
+           </style>
+       
+       </head>
+       <body>
+           <div class="container">
+               <div class ="header">
+                   <h1>Mi pagina web </h1>
+               </div>
+           <div class ="content">
+           <div class ="sidebar">
+               <h2>Menu</h2>
+               <ul>
+                <li><a href="https://elvingar3345.github.io/formulario/">inicio</a></li>
+                   <li>Acerca de</li>
+                   <li>Contacto</li>
+               </ul>
+           </div>
+           <div class="main">
+               <h2>Contenido Principal</h2>
+               <form action="" method="get"> 
+                <p>Nombre: <input type="text" name="name_control" autofocus required /></p> 
+                <p>Correo electrónico: <input type="email" name="email_control" required /></p> 
+                <p>URL: <input type="url" name="url_control" placeholder="Escribe la URL de tu página web 
+                personal" /></p> 
+                <p>Fecha: <input type="date" name="date_control" /></p> 
+                <p>Tiempo: <input type="time" name="time_control" /></p> 
+                <p>Fecha y hora: <input type="datetime" name="datetime_control" /> 
+                </p> 
+                <p>Mes: <input type="month" name="month_control" /></p> 
+                <p>Semana: <input type="week" name="week_control" /></p> 
+                <p>Número (min -10, max 10): <input type="number" name="number_control" min="-10" max="10" 
+                value="0" /></p> 
+                <p>Teléfono: <input type="tel" name="tel_control"></p> 
+                <p>Término de búsqueda: <input type="search" name="search_control" /></p> 
+                <p>Color favorito: <input type="color" name="color_control" /></p> 
+                <p><input type="submit" value="Enviar" /></p> 
+                </form>
+           </div>
+           </div>
+           <div class ="footer">
+               <p>Derechos reservados &copy; 2025</p>
+           </div>
+           </div>
+        </body>   
 </html>
